@@ -39,5 +39,6 @@ export {
   grassTexture,
   logTexture,
   woodTexture,
-  groundTexture
+  groundTexture,
+  driveTexture
 };
