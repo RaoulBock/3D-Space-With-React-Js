@@ -2,6 +2,8 @@ import React from "react";
 import { Canvas } from "@react-three/fiber";
 import { Sky } from "@react-three/drei";
 import "./App.css";
+import { Physics } from "@react-three/cannon";
+import Ground from "./components/Ground";
 
 function App() {
   const [sunPosition, setSunPosition] = React.useState([
@@ -25,9 +27,13 @@ function App() {
       {/* {sunPosition.map((e, i) => {
         return <Sky key={i} sunPosition={[e.x, e.y, e.z]} />;
       })} */}
-      <Sky sunPosition={[100, 100, 20]} distance={2000000} />
+      <Sky sunPosition={[100, 100, 20]} />
       <ambientLight intensity={0.5} />
-      adding Physics
+
+      {/* adding Physics */}
+      <Physics>
+        <Ground />
+      </Physics>
     </Canvas>
   );
 }

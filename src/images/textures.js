@@ -26,9 +26,9 @@ logTexture.magFilter = NearestFilter;
 woodTexture.magFilter = NearestFilter;
 roadTexture.magFilter = NearestFilter;
 
-driveTexture.wrapS = RepeatWrapping;
-driveTexture.wrapT = RepeatWrapping;
-driveTexture.repeat.set(4, 4);
+// driveTexture.wrapS = RepeatWrapping;
+// driveTexture.wrapT = RepeatWrapping;
+// driveTexture.repeat.set(4, 4);
 
 groundTexture.wrapS = RepeatWrapping; // load texture, set wrap mode to repeat
 groundTexture.wrapT = RepeatWrapping; // load texture, set wrap mode to repeat
